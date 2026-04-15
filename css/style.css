@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/font/Inter_18pt-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter-B";
+  src: url(../assets/font/Inter_24pt-Black.ttf);
+}
+@font-face {
+  font-family: "Inter-EB";
+  src: url(../assets/font/Inter_18pt-ExtraBold.ttf);
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: #111928;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Inter-B";
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: "Inter-EB";
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.btn {
+  border-radius: 8px;
+  transition: 0.3s;
+  padding: 12px 20px;
+  background-color: #7e3af2;
+  color: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #3c00a2;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 24px 80px;
+  margin: 0 auto;
+}
+
+p {
+  color: #6b7280;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header a {
+  color: #111928;
+  transition: 0.3s;
+}
+header .header-navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+header .header-navbar a:hover {
+  color: #7e3af2;
+}
+header .header-cta {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: 0.3s;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111928;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  padding-top: 60px;
+}
+.hero-section .hero-text {
+  width: 736px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 24px;
+}
+.hero-section .hero-text p {
+  padding-bottom: 30px;
+}
+.hero-section .hero-text div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.hero-section .hero-text div a:last-child {
+  color: #111928;
+  border: 1px solid #e5e7eb;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+.hero-section img {
+  width: 532px;
+}
+
+.brands {
+  display: flex;
+  gap: 93px;
+  padding-bottom: 70px;
+}
+
+.pricing {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+}
+.pricing .pricing-desc {
+  color: #6b7280;
+  max-width: 768px;
+  font-size: 18px;
+}
+.pricing .cards {
+  padding-top: 48px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 32px;
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.05), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.card p {
+  width: 336px;
+}
+.card p .price {
+  color: #111928;
+  font-size: 48px;
+  font-family: "Inter-EB";
+}
+.card ul {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-size: 16px;
+}
+.card ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card a {
+  text-align: center;
+  font-size: 14px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0;
+  gap: 20px;
+}
+footer p {
+  font-size: 16px;
+}
+footer .socials {
+  display: flex;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

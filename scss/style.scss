@@ -1,0 +1,156 @@
+@use "general" as *;
+///////////HEADER////////////////////
+header {
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: $primary-text-color;
+    transition: 0.3s;
+  }
+
+  .header-navbar {
+    @include flex-center(row, 32px);
+    a:hover {
+      color: $primary-purple;
+    }
+  }
+
+  .header-cta {
+    font-size: $cta-text;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: 0.3s;
+  }
+}
+
+.logo {
+  @include flex-center(row, 12px);
+  font-size: $tertiary-heading;
+  font-weight: 600;
+  color: $primary-text-color;
+}
+///////////HERO////////////////////
+
+.hero-section {
+  @include flex-center(row, 100px);
+  padding-top: 60px;
+
+  .hero-text {
+    width: 736px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+
+    p {
+      padding-bottom: 30px;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      a:last-child {
+        color: $primary-text-color;
+        border: 1px solid $border-color;
+        padding: 12px 20px;
+        border-radius: $border-radius;
+      }
+    }
+  }
+
+  img {
+    width: 532px;
+  }
+}
+
+///////////BRANDS////////////////////
+
+.brands {
+  display: flex;
+  gap: 93px;
+  padding-bottom: 70px;
+}
+
+///////////PRICING////////////////////
+
+.pricing {
+  padding: 70px 0;
+  @include flex-center(column, 16px);
+  text-align: center;
+
+  .pricing-desc {
+    color: $secondary-text-color;
+    max-width: 768px;
+    font-size: 18px;
+  }
+
+  .cards {
+    padding-top: 48px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+.card {
+  text-align: center;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  padding: 32px;
+
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+
+  box-shadow:
+    0 2px 4px -2px rgba(0, 0, 0, 0.05),
+    0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+  p {
+    width: 336px;
+
+    .price {
+      color: $primary-text-color;
+      font-size: 48px;
+      font-family: "Inter-EB";
+    }
+  }
+  ul {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 16px;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+  a {
+    text-align: center;
+    font-size: $cta-text;
+  }
+}
+
+///////////FOOTER////////////////////
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 0;
+  gap: 20px;
+  p {
+    font-size: 16px;
+  }
+
+  .socials {
+    display: flex;
+    gap: 20px;
+  }
+}

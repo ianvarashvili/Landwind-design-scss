@@ -1,0 +1,104 @@
+//variables
+$primary-purple: #7e3af2;
+$primary-text-color: #111928;
+$secondary-text-color: #6b7280;
+
+$btn-hover-bg: #3c00a2;
+$border-color: #e5e7eb;
+
+//radius
+$border-radius: 8px;
+
+//typography
+$primary-heading: 60px;
+$secondary-heading: 36px;
+$tertiary-heading: 24px;
+$body-text: 20px;
+$cta-text: 14px;
+
+// mixin
+@mixin flex-center($direction: row, $gap: 0px) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: center;
+  gap: $gap;
+}
+//reset
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/font/Inter_18pt-Regular.ttf);
+}
+@font-face {
+  font-family: "Inter-B";
+  src: url(../assets/font/Inter_24pt-Black.ttf);
+}
+@font-face {
+  font-family: "Inter-EB";
+  src: url(../assets/font/Inter_18pt-ExtraBold.ttf);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: $primary-text-color;
+  background-color: #fff;
+  font-size: $body-text;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: $primary-heading;
+  font-family: "Inter-B";
+  line-height: 60px;
+}
+
+h2 {
+  font-size: $secondary-heading;
+  font-family: "Inter-EB";
+  font-weight: 800;
+}
+h3 {
+  font-size: $tertiary-heading;
+  font-weight: 600;
+  
+}
+
+.btn {
+  border-radius: $border-radius;
+  transition: 0.3s;
+  padding: 12px 20px;
+  background-color: $primary-purple;
+  color: #fff;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: $btn-hover-bg;
+}
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 24px 80px;
+  margin: 0 auto;
+}
+
+p {
+  color: $secondary-text-color;
+}
